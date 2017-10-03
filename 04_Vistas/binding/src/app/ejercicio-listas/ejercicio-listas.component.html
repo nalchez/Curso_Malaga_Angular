@@ -1,0 +1,11 @@
+<div>
+<label for="idea">Idea: </label>
+<input id="idea" type="text" [(ngModel)]="parapa">
+<input type="button" (click)="incluyeValor()" value="Añadir">
+</div>
+<div *ngIf="listPensamientos.length > 0">
+  <h2>Lista de pensamientros</h2>
+  <ul>
+    <li *ngFor="let pensa of listPensamientos">{{pensa}}</li>
+  </ul>
+</div>
