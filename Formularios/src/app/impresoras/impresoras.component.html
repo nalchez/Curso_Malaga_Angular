@@ -1,0 +1,4 @@
+<select [(ngModel)]="provinciaSeleccionada">
+    <option *ngFor="let provin of listProvincias"
+        [ngValue] = "provin">{{provin.name}}</option>
+</select>
